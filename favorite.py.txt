@@ -1,0 +1,19 @@
+#Write a program that reads midterm exam grades of 30 students, and then reads final exam grades of
+# the same 30 students. The program should then  print the total grade for each student.
+
+
+N = 30
+midterm = [0] * N
+final   = [0] * N
+
+# Read midterm grades
+for i in range(N):
+    midterm[i] = int(input("Midterm Exam grade  " + str(i + 1) + ": "))
+
+# Read final grades
+for i in range(N):
+    final[i] = int(input("Final Exam grade  " + str(i + 1) + ": "))
+
+# Compute and print total grades
+for i in range(N):
+    print("Total grade for the semester", i + 1, ":", midterm[i] + final[i])
